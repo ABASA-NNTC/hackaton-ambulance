@@ -53,9 +53,21 @@
 		</div>
 	</div>
 
-	<div id="container_result" class="container_result">
-		<h1>Прогнозируемое число вызовов:</h1>
-		<h1 id=content_result></h1>
+	<div class="container_forecasting_result">
+		<div class="container_result_left">
+			<div class="content_result_left">
+				<h1>Прогнозируемая частота<br>вызовов:</h1>
+				<h1 id="contentResult"></h1>
+			</div>
+		</div>
+
+		<div class="container_result_right">
+			<div class="content_result_right">
+				<h1>Выберите дату</h1>
+				<input type="date" id="enterDate" name="trip-start" value="2018-01-01" min="2018-01-01" max="2022-12-31">
+				<input type="submit" name="submitDate" value="Сохранить" id="submitDate" onclick="value_date()">
+			</div>
+		</div>
 	</div>
 
 	<div id="footer" class="footer">
@@ -124,7 +136,7 @@
 	</div>
 
 	<script type="text/javascript" src="upload_file.js"></script>
-	<script type="text/javascript" src="fetch.js"></script>
+	<script type="text/javascript" src="enter_data.js"></script>
 
 </body>
 </html>
