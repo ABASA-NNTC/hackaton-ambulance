@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Прогнозирование</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="menu">
+		<a href="index.html">Главная</a>
+		<a href="forecasting.html">Прогнозирование</a>
+		<a href="#footer">Контакты</a>
+	</div>
+
+	<div class="container_import_file">
+		<div class="container_import_file_left">
+			<div class="content_import_file_left">
+				<h1>Загрузите ваш файл</h1>
+
+				<form action="https://7ff1-5-227-28-6.ngrok.io/abasa" enctype="multipart/form-data" method="post">
+		   			<input type="file" accept=".csv" name="readable" onchange="loadFile(this)">
+		   			<div class="sendfile">
+		   				<input type="submit" value="Отправить">
+		   			</div>
+		   		</form>
+			</div>
+		</div>
+
+		<div class="container_import_file_right">
+			<div class="content_import_file_right">
+				<h1>Загрузка файла</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_show_file">
+		<div class="content_show_file">
+			<h1>Посмотреть содержимое файла?</h1>
+				<div class="showfile">
+		   				<input type="submit" id="but_show_file" class="button_show_file" value="Посмотреть" onclick="showFile(this)">
+		   				<input type="submit" id="but_close_file" class="button_close_file" value="Закрыть" onclick="closeFile(this)">
+		   		</div>
+
+		   		<div id="warning_import_file" class="warning_import_file">
+		   			<p>Вы не загрузили файл!</p>
+		   		</div>
+		</div>
+
+		<div id="data" class="data">
+		
+		</div>
+	</div>
+
+	<div id="container_result" class="container_result">
+		<h1>Прогнозируемое число вызовов:</h1>
+		<h1 id=content_result></h1>
+	</div>
+
+	<div id="footer" class="footer">
+		<div class="content_footer">
+			<p>Site was developed by team "A<span class="red_simvol">B</span>A<span class="red_simvol">S</span>A"</p>
+		</div>
+
+		<div class="contact_footer">
+
+			<div class="content_contact_git_footer">
+				<div>
+					<img src="img/git_logo.png">
+					<a href="https://github.com/ElectroForez">GitHub Влада Танцева</a>
+				</div>
+
+				<div>
+					<img src="img/git_logo.png">
+					<a href="https://github.com/w111zard">GitHub Дениса Голоско</a>
+				</div>
+
+				<div>
+					<img src="img/git_logo.png">
+					<a href="https://github.com/IamSkezy">GitHub Дмитрия Ануфриева</a>
+				</div>
+
+				<div>
+					<img src="img/git_logo.png">
+					<a href="https://github.com/SharrkSummoner">GitHub Антона Мамонова</a>
+				</div>
+
+				<div>
+					<img src="img/git_logo.png">
+					<a href="https://github.com/Mikhas3009">GitHub Михаила Прусакова</a>
+				</div>
+
+			</div>
+
+			<div class="content_contact_mail_footer">
+				<div>
+					<img src="img/email_logo.png">
+					<a href="#">E-mail Влада Танцева</a>	
+				</div>
+
+				<div>
+					<img src="img/email_logo.png">
+					<a href="#">E-mail Дениса Голоско</a>	
+				</div>
+
+				<div>
+					<img src="img/email_logo.png">
+					<a href="#">E-mail Дмитрий Ануфриева</a>	
+				</div>
+
+				<div>
+					<img src="img/email_logo.png">
+					<a href="#">E-mail Антона Мамонова</a>	
+				</div>
+
+				<div>
+					<img src="img/email_logo.png">
+					<a href="#">E-mail Михаила Прусакова</a>	
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="upload_file.js"></script>
+	<script type="text/javascript" src="fetch.js"></script>
+
+</body>
+</html>

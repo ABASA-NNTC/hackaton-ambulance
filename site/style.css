@@ -1,0 +1,363 @@
+/*Импорт шрифтов*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/*Глобальные стили*/
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+/*Стилизация меню*/
+.menu {
+	width: 100%;
+	height: 7.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #272727;
+	font-family: "Montserrat", sans-serif;
+}
+
+.menu a {
+	color: #f6f4e6;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.menu a:hover {
+	color: #CC3333;
+	border-bottom: 1px solid #CC3333;
+	transition: 0.25s;
+}
+
+/*Стилизация container_info*/
+.container_info {
+	display: flex;
+	width: 100%;
+	height: 50vh;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 0px 5px #272727;
+}
+
+.container_info_left {
+	width: 50%;
+	height: 100%;
+	background: #CC3333;
+}
+
+.container_info_right {
+	width: 50%;
+	height: 100%;
+}
+
+.content_info_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10% 5%;
+	overflow: hidden;
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+.content_info_right p {
+	font-size: 1.25em;
+}
+
+.content_info_left {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_info_left h1 {
+	color: #fff;
+	font-size: 48px;
+}
+
+/*Стилизация container_forecasting*/
+.container_forecasting {
+	width: 100%;
+	height: 42.5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.content_forecasting {
+	font-family: "Montserrat", sans-serif;
+}
+.content_forecasting h1 {
+	margin-bottom: 5%;
+	font-size: 48px;
+	color: #272727;
+}
+
+.button_forecasting input {
+	background: #CC3333;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 600;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.button_forecasting input:hover {
+	font-size: 1.6em;
+	transition: 0.5s;
+	border-radius: 20px;
+}
+
+/*Стилизация footer*/
+.footer {
+	width: 100%;
+	height: auto;
+	background: #272727;
+	border-top: 3px solid black;
+}
+
+.content_footer{
+	display: flex;
+	justify-content: center;
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+
+.content_footer p {
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+	margin-top: 30px;
+}
+
+.contact_footer {
+	display: flex;
+	justify-content: center;
+	font-size: 1.2em;
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+}
+
+.content_contact_git_footer{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	margin-right: 30px;
+}
+
+.content_contact_git_footer a{
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.content_contact_git_footer a:hover {
+	opacity: 0.9;
+	color: #CC3333;
+}
+
+.content_contact_git_footer img {
+	width: 15px;
+	height: 15px;
+}
+
+.content_contact_mail_footer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
+.content_contact_mail_footer a{
+	font-family: "Montserrat", sans-serif;
+	color: #fff;
+	font-size: 0.9em;
+}
+
+.content_contact_mail_footer a:hover {
+	opacity: 0.9;
+	color: #CC3333;
+}
+
+.content_contact_mail_footer img {
+	width: 15px;
+	height: 15px;
+}
+
+.red_simvol {
+	color: #CC3333;
+}
+
+/*Стилизация container_import_file*/
+.container_import_file {
+	display: flex;
+	width: 100%;
+	height: 50vh;
+	font-family: "Montserrat", sans-serif;
+	box-shadow: 0px 5px #272727;
+}
+
+.container_import_file_left {
+	width: 50%;
+	height: 100%;
+}
+
+.container_import_file_right {
+	width: 50%;
+	height: 100%;
+	background: #CC3333;
+}
+
+.content_import_file_left {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_import_file_right {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_import_file_left h1 {
+	font-size: 36px;
+	color: #272727;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.sendfile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sendfile input{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #CC3333;
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 600;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.sendfile input:hover {
+	font-size: 1.4em;
+	transition: 0.5s;
+	border-radius: 20px;
+}
+
+.content_import_file_right h1 {
+	color: #fff;
+	font-size: 48px;
+}
+
+/*Стилизация container_show_file*/
+.container_show_file {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+.data {
+	display: none;
+}
+
+.showfile {
+	display: flex;
+	justify-content: center;
+}
+
+.button_show_file {
+	display: flex;
+}
+
+.button_close_file {
+	display: none;
+}
+
+.content_show_file h1 {
+	margin-top: 50px;
+	color: #000;
+	font-size: 48px;
+	margin-bottom: 50px;
+}
+
+.showfile input{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #CC3333;
+	color: #fff;
+	font-size: 1.25em;
+	font-weight: 600;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.showfile input:hover {
+	font-size: 1.4em;
+	transition: 0.5s;
+	border-radius: 20px;
+}
+
+#but_show_file {
+	display: flex;
+}
+
+.warning_import_file {
+	color: #CC3333;
+	margin-bottom: 15px;
+	display: none;
+	justify-content: center;
+}
+
+/*Стилизация container_result*/
+.container_result {
+	display: flex;
+	flex-direction: inline;
+	justify-content: center;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+.container_result h1{
+	margin-top: 50px;
+	color: #000;
+	font-size: 48px;
+	margin-bottom: 50px;
+}
+
+#content_result {
+	color: #CC3333;
+	margin-left: 15px;
+}
